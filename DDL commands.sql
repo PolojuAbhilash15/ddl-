@@ -1,0 +1,11 @@
+show databases;
+create database quickbite_db;
+create table users(user_id int,username varchar(50),email varchar(100),city varchar(50));
+desc users;
+alter table users add column mobilenum varchar(15);
+alter table users add column wallet_balance decimal(10,2);
+alter table users add column is_premium boolean;
+alter table users modify column username varchar(100);
+alter table users rename column mobilenum to ph_num;
+rename table users to customers;
+desc customers;
