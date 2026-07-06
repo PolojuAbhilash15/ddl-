@@ -1,0 +1,10 @@
+show databases;
+drop database students;
+create database records;
+create table students (student_id int primary key,email varchar(30) unique,city varchar(50) default "hyderabad",s_name varchar(20));
+desc students;
+insert into students(student_id,email,s_name, age) values(5,"rohith.@gmail.com","rohith",17);
+select * from students;
+alter table students modify s_name varchar(20) not null;
+select * from students where age>23;
+update students set age =21 where student_id =1;
