@@ -1,0 +1,10 @@
+show databases;
+use employees;
+select * from employee_records;
+update employee_records set city="chennai" where emp_id in(2,8);
+select emp_name from employee_records;
+select * from employee_records where city="hyderabad";
+select * from employee_records where salary>40000;
+select * from employee_records where department ="hr" and city="bangloore";
+select * from employee_records where department="hr";
+select * from employee_records where city <> "chennai";
